@@ -27,7 +27,7 @@ export default class TabAutocomplete extends Plugin {
 		}
 
 		const innerHTML = selectedSuggestions[0].children[0].children[0].innerHTML
-		return innerHTML.replace('<span class="suggestion-highlight">', '').replace('</span>', '');
+		return innerHTML.replaceAll('<span class="suggestion-highlight">', '').replaceAll('</span>', '');
 	}
 
 	async onTabPressed() {
