@@ -1,0 +1,10 @@
+{
+	"id": "tab-autocomplete",
+	"name": "Tab Autocomplete",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Use tab to autocomplete in prompt.",
+	"author": "Tom Dymel",
+	"authorUrl": "https://github.com/Geigerkind",
+	"isDesktopOnly": false
+}
