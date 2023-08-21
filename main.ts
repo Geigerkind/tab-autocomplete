@@ -1,9 +1,5 @@
 import { App, Plugin } from 'obsidian';
 
-async function wait(timeInMs: number) {
-  return new Promise((r) => setTimeout(r, timeInMs));
-}
-
 export default class TabAutocomplete extends Plugin {
 	promptIsOpen: false;
 
@@ -26,8 +22,7 @@ export default class TabAutocomplete extends Plugin {
 			return;
 		}
 
-		const innerHTML = selectedSuggestions[0].children[0].children[0].innerHTML
-		return innerHTML.replaceAll('<span class="suggestion-highlight">', '').replaceAll('</span>', '');
+	  return selectedSuggestions[0].children[0].children[0].innerText;
 	}
 
 	async onTabPressed() {
